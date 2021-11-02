@@ -3,7 +3,7 @@ kind: Releaser
 metadata:
   name: linuxsuren-bot-test-1
 spec:
-  phase: draft
+  phase: ready
   version: v0.0.6
   gitOps:
     enable: true
