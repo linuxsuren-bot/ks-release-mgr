@@ -18,4 +18,4 @@ spec:
       action: release
   secret:
     name: linuxsuren-bot
-    namespace: default
+    namespace: ks-releaser-system
