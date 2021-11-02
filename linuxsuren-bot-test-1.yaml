@@ -1,21 +1,23 @@
 apiVersion: devops.kubesphere.io/v1alpha1
 kind: Releaser
 metadata:
+  creationTimestamp: null
   name: linuxsuren-bot-test-1
 spec:
-  phase: ready
-  version: v0.0.6
   gitOps:
     enable: true
     repository:
       address: https://github.com/linuxsuren-bot/ks-release-mgr
       branch: master
       name: test
+  phase: done
   repositories:
-    - name: linuxsuren-bot-test
-      address: https://github.com/linuxsuren-bot/test
-      branch: master
-      action: release
+  - action: release
+    address: https://github.com/linuxsuren-bot/test
+    branch: master
+    name: linuxsuren-bot-test
   secret:
     name: linuxsuren-bot
     namespace: ks-releaser-system
+  version: v0.0.6
+status: {}
