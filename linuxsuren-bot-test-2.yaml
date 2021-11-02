@@ -10,7 +10,7 @@ spec:
       address: https://github.com/linuxsuren-bot/ks-release-mgr
       branch: master
       name: test
-  phase: ready
+  phase: done
   repositories:
   - action: release
     address: https://github.com/linuxsuren-bot/test
